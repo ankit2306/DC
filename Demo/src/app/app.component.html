@@ -1,0 +1,192 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" style="text-align:center">
+  <div *ngIf="Visibility" class="jumbotron">
+    <h1>Welcome to {{title}}</h1>
+    <span>
+      <a href="#" class="close" (click)="changeVisibility();">&times;</a>
+    </span>
+  </div>
+  <a href="#" class="btn-danger btn-sm" (click)="toggleVisibility();">toggle</a>
+
+  <span class="badge badge-danger">Danger</span>
+  <div class="progress" style="text-align: center;">
+      <div class="progress-bar" style="width:70%;">70%</div>
+    </div>
+    <div class="progress position-relative">
+        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        <small class="justify-content-center d-flex position-absolute w-100">60% complete</small>
+    </div>
+
+  <div class="alert alert-success fade in alert-dismissible show" >
+      <h3>Dismissable Alert</h3>
+      <button type="button" class="close" data-dismiss="alert" style="margin-top:0.5rem;" aria-label="close">&times;</button>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <form action="#" method="post">
+      <table class="form-group">
+        <tr>
+          <td>user_name:</td>
+          <td><input type="email" name="user_name" id="user_name" style="width: inherit;"></td>
+        </tr>
+        <tr>
+          <td>password:</td>
+          <td><input type="password" name="password" id="password"></td>
+        </tr>
+      </table>  
+    </form>
+      <p>{{errorMsg}}{{details | json}}</p>
+      <button type="button" class="close" data-dismiss="alert" style="margin-top:0.5rem;">&times;</button>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <h4>Column 1</h4>
+      <p>Bootstrap is a free and open-source CSS framework
+         directed at responsive, mobile-first front-end web development.
+          It contains CSS- and (optionally) JavaScript-based design
+           templates for typography, forms, buttons, navigation and other
+            interface components.
+      </p>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Column 2</h4>
+        <p>Bootstrap is a free and open-source CSS framework
+           directed at responsive, mobile-first front-end web development.
+            It contains CSS- and (optionally) JavaScript-based design
+             templates for typography, forms, buttons, navigation and other
+              interface components
+        </p>
+      </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>Column 3</h4>
+          <p>Bootstrap is a free and open-source CSS framework
+             directed at responsive, mobile-first front-end web development.
+              It contains CSS- and (optionally) JavaScript-based design
+               templates for typography, forms, buttons, navigation and other
+                interface components.
+          </p>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <h4>Column 4</h4>
+            <p>Bootstrap is a free and open-source CSS framework
+               directed at responsive, mobile-first front-end web development.
+                It contains CSS- and (optionally) JavaScript-based design
+                 templates for typography, forms, buttons, navigation and other
+                  interface components
+            </p>
+    </div>
+      
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+        <div id="col1Content" class="collapse-in">
+            Bootstrap is the third-most-starred project on GitHub, 
+            with more than 131,000 stars, behind only freeCodeCamp 
+            (almost 300,000 stars) and marginally behind Vue.js
+             framework.[2] According to Alexa Rank, Bootstrap getbootstrap.com
+             is in the top-2000 in US while vuejs.org is in top-7000 in US
+        </div>
+    </div>
+  </div>
+  
+      <div class="well hidden-sm hidden-md hidden-lg">
+        <p>Screen &gt; 768px and &lt; 992px</p>
+      </div>
+      <div class="well hidden-md hidden-lg">
+          <p>Screen &gt; 768px and &lt; 992px</p>
+      </div>
+      <div class="well  hidden-lg">
+        <p>Screen &gt; 992px and &lt; 1200px</p>
+      </div>
+      <div class="well">
+        <p>Screen &gt; 1200px</p>
+       </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 offset-6">
+          <table class="table table-bordered table-striped table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <td colspan="4">Best Baseball Players</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="col-md-2"></th>
+              <th class="text-center">Average</th>
+              <th class="text-center">RBIs</th>
+              <th class="text-center">Homeruns</th>
+            </tr>
+            <tr class="table-danger">
+              <td><a href="#">Hank Aron</a></td>
+              <td>.305</td>
+              <td>2297</td>
+              <td>755</td>
+            </tr>
+            <tr class="table-success">
+              <td><a href="#">Babe Ruth</a></td>
+              <td>.342</td>
+              <td>2497</td>
+              <td>255</td>
+            </tr>
+            <tr>
+              <td><a href="#">Barry Bonds</a></td>
+              <td>.295</td>
+              <td>2971</td>
+              <td>755</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+
+    <div id="theCarousel" class="carousel slide" data-ride='carousel'>
+
+      <ol class="carousel-indicators">
+        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#theCarousel" data-slide-to="1"></li>
+        <li data-target="#theCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="slide1">
+            <div class="carousel-caption">
+              <h1>Amazing Backgrounds</h1>
+              <p>Thousands of Backgrounds for free</p>
+              <p><a href="#" class="btn btn-primary btm-sm">Get Them Now</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slide2">
+            <div class="carousel-caption">
+              <h1>Amazing Backgrounds</h1>
+              <p>Thousands of Themes for free</p>
+              <p><a href="#" class="btn btn-warning btm-sm">Get Them Now</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slide2">
+            <div class="carousel-caption">
+              <h1>Amazing Backgrounds</h1>
+              <p>Thousands of Backgrounds</p>
+              <p><a href="#" class="btn btn-danger btm-sm">Get Them Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#theCarousel" class="left-carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a href="#theCarousel" class="right-carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>    
+</div>
+
+  <style>
+    .jumbotron{
+      margin-top: 2rem;
+      background-color: #12abdb;
+      color: white;
+    }
+  </style>
