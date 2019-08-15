@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="jumbotron">
+        <ul class="list-group">
+            <li (click)="gotoDetails(department)" class="list-group-item" *ngFor="let department of departments">
+                <span class="badge badge-dark">{{department.id + "."}}</span>{{" " + department.name}}
+            </li>
+        </ul>
+    </div>
+</div>
